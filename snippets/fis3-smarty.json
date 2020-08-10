@@ -1,0 +1,90 @@
+{
+    "Fis3 Smarty block": {
+        "prefix": "block",
+        "body": ["{%block name=\"${1:name}\"%}\n\n{%/block%}"],
+        "description": ""
+    },
+    "Fis3 Smarty /block": {
+        "prefix": "/block",
+        "body": ["{%/block%}"],
+        "description": ""
+    },
+    "Fis3 Smarty widget": {
+        "prefix": "widget",
+        "body": ["{%widget name=\"${1:name}\" info=\"$2\"%}"],
+        "description": ""
+    },
+    "Fis3 Smarty assign": {
+        "prefix": "assign",
+        "body": [
+            "{%assign var=\"${1:name}\" value=${2:value} scope=\"${3|global,root,parent|}\"%}"
+        ],
+        "description": ""
+    },
+    "Fis3 Smarty if": {
+        "prefix": "if",
+        "body": ["{%if ${1:condition}%}\n\n{%/if%}"],
+        "description": ""
+    },
+    "Fis3 Smarty /if": {
+        "prefix": "/if",
+        "body": ["{%/if%}"],
+        "description": ""
+    },
+    "Fis3 Smarty elseif": {
+        "prefix": "elseif",
+        "body": ["{%elseif ${1:condition}%}\n"],
+        "description": ""
+    },
+    "Fis3 Smarty else": {
+        "prefix": "else",
+        "body": ["{%else%}\n"],
+        "description": ""
+    },
+    "Fis3 Smarty include": {
+        "prefix": "include",
+        "body": [
+            "{%include file=\"${1:file}\" assign=${2:name} var1=${3:value}%}"
+        ],
+        "description": ""
+    },
+    "Fis3 Smarty foreach": {
+        "prefix": "foreach",
+        "body": [
+            "{%foreach from=${1:collection} item=${2:item} key=${3:key} name=${4:name}%}\n\n{%/foreach%}"
+        ],
+        "description": ""
+    },
+    "Fis3 Smarty /foreach": {
+        "prefix": "/foreach",
+        "body": ["{%/foreach%}"],
+        "description": ""
+    },
+    "Fis3 Smarty break": {
+        "prefix": "break",
+        "body": ["{%break%}"],
+        "description": ""
+    },
+    "Fis3 Smarty capture": {
+        "prefix": "capture",
+        "body": [
+            "{%capture name=\"${1:name}\" assign=\"${2:variable}\" append=\"${3:array_variable}\"%}\n\n{%/capture%}"
+        ],
+        "description": ""
+    },
+    "Fis3 Smarty /capture": {
+        "prefix": "/capture",
+        "body": ["{%/capture%}"],
+        "description": ""
+    },
+    "Fis3 Smarty extends": {
+        "prefix": "extends",
+        "body": ["{%extends file=\"${1:file}\"%}"],
+        "description": ""
+    },
+    "Fis3 Smarty require": {
+        "prefix": "require",
+        "body": ["{%require name=\"${1:name}\"%}"],
+        "description": ""
+    }
+}

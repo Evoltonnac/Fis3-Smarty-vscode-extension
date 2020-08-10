@@ -1,0 +1,21 @@
+{
+    "brackets": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"],
+        ["{%", "%}"]
+    ],
+    "autoClosingPairs": [
+        { "open": "{", "close": "}" },
+        { "open": "[", "close": "]" },
+        { "open": "(", "close": ")" },
+        { "open": "{%", "close": "%", "autoCloseBefore": "}" },
+        { "open": "{%", "close": "%}", "autoCloseBefore": "\n\t" },
+        { "open": "\"", "close": "\"", "notIn": ["string", "comment"] },
+        { "open": "'", "close": "'", "notIn": ["string", "comment"] },
+        { "open": "`", "close": "`", "notIn": ["string", "comment"] }
+    ],
+    "comments": {
+        "blockComment": ["{%*", "*%}"]
+    }
+}

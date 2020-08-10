@@ -1,0 +1,41 @@
+{
+    "name": "fis3smarty",
+    "scopeName": "text.html.smarty.fis3",
+    "injectionSelector": ["L:text.html.smarty"],
+    "patterns": [],
+    "repository": {
+        "nocomments": {
+            "begin": "(?<!\\{%\\*[^(\\*%\\})]*)\\{%",
+            "end": "%\\}(?![^(\\{%\\*)]*\\*%\\})",
+            "patterns": [{ "include": "text.html.smarty" }]
+        },
+        "script": {
+            "begin": "\\s*((\\{%)(script)(%\\}))\\s*",
+            "end": "\\s*((\\{%)/(script)(%\\}))\\s*",
+            "captures": {
+                "0": {
+                    "name": "meta.embedded.line.tag.smarty"
+                },
+                "1": {
+                    "name": "source.smarty"
+                },
+                "2": {
+                    "name": "punctuation.section.embedded.begin.smarty"
+                },
+                "3": {
+                    "name": "keyword.control.smarty"
+                },
+                "4": {
+                    "name": "punctuation.section.embedded.end.smarty"
+                }
+            },
+            "contentName": "meta.embedded.block.javascript",
+            "patterns": [{ "include": "source.js" }]
+        },
+        "comments": {
+            "begin": "\\{%\\*",
+            "end": "\\*%\\}",
+            "name": "comment.block.smarty.fis3"
+        }
+    }
+}
