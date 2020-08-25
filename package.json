@@ -3,7 +3,11 @@
     "displayName": "Fis3-Smarty",
     "publisher": "xingminghua",
     "description": "Fis3-smarty 技术栈下辅助开发的工具",
-    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Evoltonnac/Fis3-Smarty-vscode-extension"
+    },
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.47.0"
     },
