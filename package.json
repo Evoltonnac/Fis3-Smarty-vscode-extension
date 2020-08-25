@@ -41,6 +41,19 @@
                 "language": "smarty",
                 "path": "./snippets/fis3-smarty.json"
             }
+        ],
+        "grammars": [
+            {
+                "language": "smarty",
+                "scopeName": "text.html.smarty",
+                "path": "./syntaxes/fis3-smarty.tmLanguage.json",
+                "embeddedLanguages": {
+                    "source.smarty": "smarty",
+                    "text.html.derivative": "html",
+                    "source.js": "javascript",
+                    "source.css": "css"
+                }
+            }
         ]
     },
     "scripts": {
