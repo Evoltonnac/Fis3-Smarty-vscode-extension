@@ -1,9 +1,7 @@
-# Change Log
+## [0.0.2] - 2020-08-25
 
-All notable changes to the "demo" extension will be documented in this file.
+-   增加 Fis3-Smarty 语法高亮
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [0.0.1]
 
-## [Unreleased]
-
-- Initial release
+-   增加自动补全、文件路径跳转
