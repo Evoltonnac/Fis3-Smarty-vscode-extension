@@ -8,7 +8,7 @@ import { NamespaceProvider } from "./namespaceDefinition/namespaceProvider";
 export async function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(
         vscode.languages.registerDefinitionProvider(
-            ["smarty"],
+            ["*"],
             new NamespaceProvider()
         )
     );
